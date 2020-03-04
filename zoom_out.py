@@ -46,7 +46,7 @@ def mouseHandler(event, x, y, flags, params):
                 #condition to check that we dont go out of bounds
                 if((row + j) < (w-1) and (col+i) < (h-1)):
                     #doing shrinking:
-                    result[int(row),col] =  image[int(row + j), int(col+i)]
+                    result[row,col] =  image[int(row + j), int(col+i)]
                     result[int(row+1),col] =  image[int(row+j), int(col+i)]
                     result[row,int(col+1)] = image[int(row+j), int(col+i)]
                     result[int(row+1), int(col+1)] = image[int(row+j), int(col+i)]
